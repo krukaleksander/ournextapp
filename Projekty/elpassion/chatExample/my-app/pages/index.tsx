@@ -4,7 +4,7 @@ import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
   const [message, setMessage] = useState("");
-  const [listOfMessage, setListOfMessage] = useState([]);
+  const [listOfMessage, setListOfMessage] = useState<string[]>([]);
   const handleMessage = (e: { target: { value: SetStateAction<string> } }) => {
     setMessage(e.target.value);
   };
